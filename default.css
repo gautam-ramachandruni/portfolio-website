@@ -78,7 +78,6 @@ p, li, span, label, input, textarea {
     display: grid;
     text-align: center;
     align-content: center;
-    border: 2px dashed lightcoral;
     min-height: 20em;
 }
 
@@ -101,17 +100,14 @@ p, li, span, label, input, textarea {
 
 .nav-wrapper {
     grid-area: nav-wrapper;
-    border: 1px dashed lightcoral;
 }
 
 .left-column {
     grid-area: left-column;
-    border: 1px dashed lightcoral;
 }
 
 .right-column {
     grid-area: right-column;
-    border: 1px dashed lightcoral;
 }
 
 @media screen and (max-width: 1200px) {
