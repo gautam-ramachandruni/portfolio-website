@@ -11,6 +11,8 @@
 
     --previewShadow: #F0EAD6;
     --previewBg:rgb(251, 249, 243, 0.8); 
+
+    --buttonColor: black;
 }
 
 html, body {
@@ -339,6 +341,49 @@ p, li, span, label, input, textarea {
 .post-intro {
     color: #4B5156;
     font-size: 14px;
+}
+
+#contact-form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    background-color: var(--mainColor);
+
+    padding: 15px;
+}
+
+#contact-form label {
+    line-height: 2.7em;
+}
+
+#contact-form textarea {
+    min-height: 100px;
+    font-size: 14px;
+}
+
+.input-field {
+    width: 100%;
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    font-size: 14px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    width: 100%;
+    color: #FFF;
+    background-color: var(--buttonColor);
+    border: none;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1200px) {
