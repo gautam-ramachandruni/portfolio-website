@@ -33,6 +33,20 @@ function setTheme(mode) {
     localStorage.setItem('theme', mode);
 }
 
+$(document).ready(function () {
+    $('#submit-btn').click(function (event) {
+        var subject = $('#subject').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+
+        if (!(subject.length >= 2 && subject.length <= 75) || !(email.length > 5 && typeof email == "string" && (email.indexOf('@') > -1 && email.indexOf('.') > -1)) ||
+            !(message.length <= 280)) {
+            event.preventDefault();
+            alert('Oops, make sure:\n- Subject is at least 2 characters and not more than 75.\n- Email is from a proper domain.\n- Message length has not exceeded 280 characters.');
+        }
+    });
+});
+
 function readAlert() {
-    alert('Oops, there\'s more to come in the future. Stay tuned!');
+    alert('There\'s more to come. Stay tuned!');
 };

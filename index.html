@@ -4,10 +4,13 @@
 <head>
 	<title>Gautam's Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="default.css">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -68,33 +71,45 @@
 						May 2018. Since then, I've worked on a Pilot Training Scheduling system for a major domestic
 						airline, and then went on to build an Angular 9 logbook application as a software engineering
 						consultant.</p>
-					<p>If you're looking to hire for a software engineering role, or have general feedback, don't
+					<p>If you're looking to hire, or just have general feedback, don't
 						hesitate to reach out!
 					</p>
 					<hr>
 					<h4>Areas of Expertise</h4>
 					<a target="_blank" href="resume.pdf">Download Resume</a>
-					<p>Fullstack engineer with a primary focus on backend development:</p>
+					<p>Full stack engineer with a primary focus on back-end development:</p>
 					<div id="skills">
 						<ul>
-							<li>AngularJS</li>
-							<li>JavaScript</li>
-							<li>HTML5/CSS3</li>
-							<li>Java</li>
-							<li>Python</li>
+							<li id="skill-title">Front-end</li>
+							<li id="tools-languages">AngularJS</li>
+							<li id="tools-languages">JavaScript</li>
+							<li id="tools-languages">HTML5</li>
+							<li id="tools-languages">CSS3</li>
 						</ul>
 						<ul>
-							<li>SQL</li>
-							<li>Cypress.io</li>
-							<li>Selenium</li>
-							<li>Docker</li>
-							<li>Heroku</li>
+							<li id="skill-title">Back-end</li>
+							<li id="tools-languages">Java Spring</li>
+							<li id="tools-languages">Python</li>
+							<li id="tools-languages">MySQL</li>
+							<li id="tools-languages">PostgreSQL</li>
+						</ul>
+						<ul>
+							<li id="skill-title">Automation</li>
+							<li id="tools-languages">Cypress</li>
+							<li id="tools-languages">Selenium</li>
+							<li id="tools-languages">Cucumber BDD</li>
+							<li id="tools-languages">TestNG</li>
+						</ul>
+						<ul>
+							<li id="skill-title">DevOps</li>
+							<li id="tools-languages">Docker</li>
+							<li id="tools-languages">Heroku</li>
 						</ul>
 					</div>
 				</div>
 				<div class="social-links">
 					<img id="social-img" src="images/social-links.jpeg">
-					<h3>Let's connect!</h3>
+					<h3>Let's Connect!</h3>
 					<a target="_blank" href="https://www.linkedin.com/in/gautam-ramachandruni/">LinkedIn:
 						gautam-ramachandruni</a>
 					<br>
@@ -106,7 +121,7 @@
 
 	<section class="s1">
 		<div class="main-container">
-			<h3 style="text-align: center;">Some of My Past Projects</h3>
+			<h3 style="text-align: center;">Projects</h3>
 			<div class="post-wrapper">
 				<div>
 					<div class="post">
@@ -150,22 +165,23 @@
 	<section class="s2">
 		<div class="main-container">
 			<h3 style="text-align: center;">Get In Touch</h3>
-			<form id="contact-form">
+			<form id="contact-form" action="https://formspree.io/g.ramachandruni@gmail.com" method="POST">
 				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+				<input class="input-field" type="text" id="name" name="name">
 
 				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+				<input class="input-field" type="text" id="subject" name="subject">
 
 				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+				<input class="input-field" type="text" id="email" name="email">
 
 				<label>Message</label>
-				<textarea class="input-field" name=" message"></textarea>
-
+				<textarea class="input-field" id="message" name="message"></textarea>
+				
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
 		</div>
+		</form>
 	</section>
 	<div class="footer">
 		<p>@author: Gautam Ramachandruni</p>

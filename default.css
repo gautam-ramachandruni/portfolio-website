@@ -244,7 +244,7 @@ p, li, span, label, input, textarea {
 
 #preview-shadow {
     background-color: var(--previewShadow);
-    width: 300px;
+    max-width: 300px;
     height: 180px;
 
     padding-left: 30px;
@@ -301,7 +301,18 @@ p, li, span, label, input, textarea {
 #skills {
     display: flex;
     justify-content: space-evenly;
+    align-content: center;
     background-color: var(--previewShadow);
+
+    padding-right: 50px;
+}
+
+#skills #skill-title {
+    text-decoration: underline;
+}
+
+#skills #tools-languages {
+    font-size: 14px;
 }
 
 .social-links {
@@ -408,6 +419,7 @@ p, li, span, label, input, textarea {
 
 .footer {
     position: relative;
+    bottom: 0;
     clear: both;
     width: 100%;
     background-color: var(--mainColor);
@@ -423,7 +435,7 @@ p, li, span, label, input, textarea {
 
 @media screen and (max-width: 800px) {
     .intro-wrapper {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
         'nav-wrapper'
         'left-column'
@@ -433,5 +445,19 @@ p, li, span, label, input, textarea {
 
     .right-column {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #preview-shadow {
+       max-width: 280px;
+       height: 80px;
+
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+
+    #preview {
+        width: 280px;
     }
 }
