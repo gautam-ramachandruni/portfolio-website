@@ -18,6 +18,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body * {
@@ -90,7 +91,7 @@ p, li, span, label, input, textarea {
     display: grid;
     text-align: center;
     align-content: center;
-    min-height: 20em;
+    min-height: 10em;
 }
 
 .intro-wrapper {
@@ -309,7 +310,17 @@ p, li, span, label, input, textarea {
     text-align: center;
 }
 
-#social_img {
+.project-container {
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+#project-picture {
+    width: 100%;
+}
+
+#social-img {
     width: 100%;
 }
 
@@ -324,6 +335,7 @@ p, li, span, label, input, textarea {
 
 .post {
     border: 1px solid var(--borderColor);
+
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);   
@@ -392,6 +404,15 @@ p, li, span, label, input, textarea {
 
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.footer {
+    position: relative;
+    clear: both;
+    width: 100%;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {

@@ -14,8 +14,7 @@
 	<section class="s1">
 		<div class="main-container">
 			<div class="greeting-wrapper">
-				<!-- <h1>&lt;!--Hello, I'm Gautam--&gt</h1> -->
-				<h1>// Hi, I'm Gautam.</h1>
+				<h1>Hello world, I'm Gautam.</h1>
 			</div>
 
 			<div class="intro-wrapper">
@@ -27,20 +26,20 @@
 					</div>
 
 					<ul id="navigation">
-						<li><a href="#">Contact</a></li>
+						<li><a href="#contact-form">Contact</a></li>
 					</ul>
 				</div>
 
 				<div class="left-column">
 					<img id="profile-picture" src="images/profile-picture.jpeg">
-					<h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+					<h5 style="text-align: center; line-height: 0;">Pick a theme. Any theme.</h5>
 					<div id="theme-options-wrapper">
 						<div data-mode="light" id="light-mode" class="theme-dot"></div>
 						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
 						<div data-mode="green" id="green-mode" class="theme-dot"></div>
 						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
 					</div>
-					<p id="settings-note">Theme settings will be saved for<br>your next visit</p>
+					<p id="settings-note">*Theme settings will be saved for<br>your next visit.</p>
 				</div>
 
 				<div class="right-column">
@@ -49,8 +48,8 @@
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
 							<h3>What I Do</h3>
-							<p>I'm a budding software engineer, passionate about building scalable web applications and
-								learning how to optimize them.</p>
+							<p>I'm a software engineer, eager to build scalable web applications and passionate
+								about learning how to enhance them.</p>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -65,11 +64,12 @@
 			<div class="about-wrapper">
 				<div class="about-me">
 					<h4>More About Me</h4>
-					<p>I received my master's in Computer Science from The University of Texas at Arlington in
+					<p>I obtained my master's in Computer Science from The University of Texas at Arlington in
 						May 2018. Since then, I've worked on a Pilot Training Scheduling system for a major domestic
-						airline, and then went on to spearhead test automation framework development for an Angular 9
-						Flight Simulator Logbook application as a software engineering consultant.</p>
-					<p>If you're looking to hire for a software engineering role, or have general feedback, contact me!
+						airline, and then went on to build an Angular 9 logbook application as a software engineering
+						consultant.</p>
+					<p>If you're looking to hire for a software engineering role, or have general feedback, don't
+						hesitate to reach out!
 					</p>
 					<hr>
 					<h4>Areas of Expertise</h4>
@@ -85,7 +85,7 @@
 						</ul>
 						<ul>
 							<li>SQL</li>
-							<li>Cypress</li>
+							<li>Cypress.io</li>
 							<li>Selenium</li>
 							<li>Docker</li>
 							<li>Heroku</li>
@@ -93,12 +93,12 @@
 					</div>
 				</div>
 				<div class="social-links">
-					<img id="social_img" src="images/social-links.jpeg">
-					<h3>Find me on LinkedIn & Twitter</h3>
+					<img id="social-img" src="images/social-links.jpeg">
+					<h3>Let's connect!</h3>
 					<a target="_blank" href="https://www.linkedin.com/in/gautam-ramachandruni/">LinkedIn:
 						gautam-ramachandruni</a>
 					<br>
-					<a target="_blank" href="https://twitter.com/g_ramachandruni">Twitter: @g_ramachandruni</a>
+					<a target="_blank" href="https://github.com/gramachandruni">GitHub: gramachandruni</a>
 				</div>
 			</div>
 		</div>
@@ -115,7 +115,7 @@
 							<h6 class="post-title">SimLog Flash Remediation</h6>
 							<p class="post-intro">Remediated Flash dependency of a logbook application by re-skinning UI
 								with Angular 9 components.</p>
-							<a href="post.html">Read More</a>
+							<a onclick="readAlert(); return false;" href="#">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -127,7 +127,7 @@
 							<h6 class="post-title">Pilot Training Scheduling System</h6>
 							<p class="post-intro">Replaced legacy training scheduler with a modern microservice
 								architecture.</p>
-							<a href="#">Read More</a>
+							<a onclick="readAlert(); return false;" href="#">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -139,7 +139,7 @@
 							<h6 class="post-title">Matrix-Vector Block Multiplication</h6>
 							<p class="post-intro">Small-scale Cloud Computing project aimed at understanding PageRank.
 							</p>
-							<a href="#">Read More</a>
+							<a onclick="readAlert(); return false;" href="#">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -167,6 +167,9 @@
 			</form>
 		</div>
 	</section>
+	<div class="footer">
+		<p>@author: Gautam Ramachandruni</p>
+	</div>
 	<script type="text/JavaScript" src="script.js"></script>
 </body>
 

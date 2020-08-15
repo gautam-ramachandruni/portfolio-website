@@ -1,11 +1,9 @@
-console.log('Hello');
-
 let theme = localStorage.getItem('theme');
 
-if (theme == null) {
-    setTheme('light');
-} else {
+if (theme !== null) {
     setTheme(theme);
+} else {
+    setTheme('light');
 }
 
 let themeDots = document.getElementsByClassName('theme-dot');
@@ -34,3 +32,7 @@ function setTheme(mode) {
 
     localStorage.setItem('theme', mode);
 }
+
+function readAlert() {
+    alert('Oops, there\'s more to come in the future. Stay tuned!');
+};
